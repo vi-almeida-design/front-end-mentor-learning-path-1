@@ -40,7 +40,7 @@ This challenge is very simple, but I realized that I need to understand the ```a
 
 I also got stuck with really basic stuff, like centering the two elements (QR Code Card and the Attribution Text below) in the page. I was unable to properly align them vertically because the ```body``` of my document was as tall as those two elements.
 
-I just needed to use ```height:100vh``` and it'd be good to go.
+I just needed to use ```max-height:100vh``` and it'd be good to go.
 *
 
 ## Author
