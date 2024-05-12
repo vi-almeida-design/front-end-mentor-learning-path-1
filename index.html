@@ -1,141 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="style-guide.css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  
-  <title>Basic QR code component by Vi_Almeida</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style-guide.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  <!-- Here goes the HTML structure of the QR Code Component-->
-  <div class="container">
-    
-    <div class="box">
-      
-      <!--Here is the div for the image-->
-      <div class="qr_code_image">
-        <img src="./images/image-qr-code.png" alt="QR Code" style="width:288px; height:288px">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Basic QR code component by Vi_Almeida</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Here goes the HTML structure of the QR Code Component-->
+    <div class="container">
+      <div class="box">
+        <!--Here is the div for the image-->
+        <div class="qr_code_image">
+          <img src="./images/image-qr-code.png" alt="QR Code" style="width: 288px; height: 288px"/>
+        </div>
+
+        <!--Here is the div for the copy within the component-->
+        <div class="copy">
+          <h1>Improve your front-end skills by building projects</h1>
+
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </p>
+        </div>
       </div>
-  
-      <!--Here is the div for the copy within the component-->
-      <div class="copy">
-        <h1>Improve your front-end skills by building projects</h1>
-  
-        <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level </p>
-  
+
+      <!--Here goes the attribution for the FrontEndMentor submission-->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/vi-almeida-design" target="_blank"
+          >Vi Almeida</a
+        >.
       </div>
-  
-    </div>
-   
-    <!--Here goes the attribution for the FrontEndMentor submission-->
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/vi-almeida-design" target="_blank">Vi Almeida</a>.
     </div>
 
-  </div>
+    <!--I divided the CSS part of the code into two styles. One is for the style-guide and the other for general styling.-->
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Outfit", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-  <!--I divided the CSS part of the code into two styles. One is for the style-guide and the other for general styling.-->
-  <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
 
-  *{
-      box-sizing: border-box;
-      font-family: 'Outfit', sans-serif;
-      margin: 0;
-      padding: 0;
-  }
+      h1 {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--dark-blue);
+      }
 
-  :root{
-  --white: hsl(0, 0%, 100%);
-  --light-gray: hsl(212, 45%, 89%);
-  --grayish-blue: hsl(220, 15%, 55%);
-  --dark-blue: hsl(218, 44%, 22%);
-  }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        color: var(--grayish-blue);
+      }
 
-  h1{
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-    color: var(--dark-blue);
-  }
+      .attribution {
+        font-size: 12px;
+      }
+    </style>
 
-  p{
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    color: var(--grayish-blue);
-  }
+    <style>
+      body {
+        background-color: var(--light-gray);
+      }
 
-  .attribution{
-    font-size: 12px;
-  }
-  
-  </style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
 
-  <style>
-    body{
-      background-color: var(--light-gray);
-    }
+        gap: 48px;
 
-    .container{
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
 
-      gap: 48px;
-      
-      align-items: center;
-      justify-content: center;
-    }
+      .box {
+        background-color: white;
+        max-width: 320px;
+        border-radius: 20px;
+        padding: 16px 16px 36px 16px;
+        box-shadow: 0px 25px 25px 0 rgba(0, 0, 0, 0.0477);
+      }
 
-    .box{
-      background-color: white;
-      max-width: 320px;
-      border-radius: 20px;
-      padding: 16px 16px 36px 16px;
-      box-shadow: 0px 25px 25px 0 rgba(0, 0, 0, 0.0477);
-    }
-    
-    .qr_code_image{
-      margin-bottom: 16px;
-    }
+      .qr_code_image {
+        margin-bottom: 16px;
+      }
 
-    .qr_code_image img{
-      width: 288px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      border-radius: 10px;
-    }
+      .qr_code_image img {
+        width: 288px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 10px;
+      }
 
-    .copy{
-      max-width: 288px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin: 0 auto;
-    }
+      .copy {
+        max-width: 288px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 auto;
+      }
 
-    .copy p{
-      max-width: 256px;
-      margin: 0 auto;
-    }
-  
-  </style>
-
-</body>
+      .copy p {
+        max-width: 256px;
+        margin: 0 auto;
+      }
+    </style>
+  </body>
 </html>
